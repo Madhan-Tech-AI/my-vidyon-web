@@ -101,7 +101,7 @@ const ERPSolutions = () => {
       <Navbar />
       
       {/* Hero */}
-      <section className="pt-28 pb-12 relative overflow-hidden">
+      <section className="h-screen flex items-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-hero" />
         
         <div className="container-custom relative">
