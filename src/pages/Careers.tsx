@@ -24,9 +24,12 @@ import {
     Shield,
     Code,
     BarChart,
-    Lightbulb
+    Lightbulb,
+    Building2,
+    UserCheck
 } from "lucide-react";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import ScrollAnimation from "@/components/ScrollAnimation";
 import { useState } from "react";
 
@@ -151,56 +154,75 @@ const CareersPage = () => {
 
     return (
         <div className="min-h-screen bg-background">
-            {/* Main Navigation Bar */}
-            <nav className="border-b border-border sticky top-0 z-50 bg-background/95 backdrop-blur-sm">
-                <div className="container-custom">
-                    <div className="flex items-center justify-between h-16">
-                        {/* Logo */}
-                        <Link to="/" className="flex items-center gap-2">
-                            <img src="/logo.png" alt="My Vidyon" className="h-10 w-auto" />
-                        </Link>
-
-                        {/* Navigation Links */}
-                        <div className="hidden md:flex items-center gap-8">
-                            <Link to="/about" className="text-foreground/80 hover:text-primary transition-colors text-sm font-medium">
-                                What We Think
-                            </Link>
-                        </div>
-
-                        {/* Back to Main Site */}
-                        <Link
-                            to="/"
-                            className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors flex items-center gap-2"
-                        >
-                            <Globe className="w-4 h-4" />
-                            <span className="hidden sm:inline">Main Site</span>
-                        </Link>
-                    </div>
-                </div>
-            </nav>
+            {/* Main Navigation Bar - Same as main site */}
+            <Navbar />
 
             {/* Secondary Careers Navigation */}
             <div className="border-b border-background/10" style={{ backgroundColor: '#DD0303' }}>
                 <div className="container-custom">
-                    <div className="flex items-center justify-between h-14">
+                    <div className="flex items-center justify-between py-3">
                         {/* Careers Text */}
                         <div className="font-heading font-bold text-lg text-background">
                             Careers
                         </div>
 
-                        {/* Career Options */}
-                        <div className="hidden md:flex items-center gap-6">
-                            <a href="#jobs" className="text-background/90 hover:text-primary transition-colors text-sm font-medium flex items-center gap-2">
+                        {/* Navigation Items */}
+                        <div className="flex items-center gap-1 overflow-x-auto scrollbar-hide">
+                            {/* Job Search */}
+                            <a
+                                href="/careers/job-search"
+                                className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-background/90 hover:text-primary focus:text-primary active:text-primary hover:bg-background/10 rounded-md transition-colors whitespace-nowrap"
+                            >
                                 <Search className="w-4 h-4" />
-                                Job Search
+                                <span className="hidden sm:inline">Job Search</span>
                             </a>
-                            <a href="#saved" className="text-background/90 hover:text-primary transition-colors text-sm font-medium flex items-center gap-2">
+
+                            {/* Saved Jobs */}
+                            <a
+                                href="/careers/saved-jobs"
+                                className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-background/90 hover:text-primary focus:text-primary active:text-primary hover:bg-background/10 rounded-md transition-colors whitespace-nowrap"
+                            >
                                 <Bookmark className="w-4 h-4" />
-                                Saved Jobs
+                                <span className="hidden sm:inline">Saved Jobs</span>
                             </a>
-                            <a href="#application" className="text-background/90 hover:text-primary transition-colors text-sm font-medium flex items-center gap-2">
+
+                            {/* Access Application */}
+                            <a
+                                href="/careers/access-application"
+                                className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-background/90 hover:text-primary focus:text-primary active:text-primary hover:bg-background/10 rounded-md transition-colors whitespace-nowrap"
+                            >
                                 <FileText className="w-4 h-4" />
-                                Access Application
+                                <span className="hidden sm:inline">Access Application</span>
+                            </a>
+
+                            {/* Divider */}
+                            <div className="h-6 w-px bg-background/20 mx-2 hidden md:block" />
+
+                            {/* Who We Are */}
+                            <a
+                                href="/careers/who-we-are"
+                                className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-background/90 hover:text-primary focus:text-primary active:text-primary hover:bg-background/10 rounded-md transition-colors whitespace-nowrap"
+                            >
+                                <Users className="w-4 h-4" />
+                                <span className="hidden sm:inline">Who We Are</span>
+                            </a>
+
+                            {/* Life at My Vidyon */}
+                            <a
+                                href="/careers/life-at-my-vidyon"
+                                className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-background/90 hover:text-primary focus:text-primary active:text-primary hover:bg-background/10 rounded-md transition-colors whitespace-nowrap"
+                            >
+                                <Building2 className="w-4 h-4" />
+                                <span className="hidden sm:inline">Life at My Vidyon</span>
+                            </a>
+
+                            {/* How We Hire */}
+                            <a
+                                href="/careers/how-we-hire"
+                                className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-background/90 hover:text-primary focus:text-primary active:text-primary hover:bg-background/10 rounded-md transition-colors whitespace-nowrap"
+                            >
+                                <UserCheck className="w-4 h-4" />
+                                <span className="hidden sm:inline">How We Hire</span>
                             </a>
                         </div>
                     </div>
@@ -332,9 +354,9 @@ const CareersPage = () => {
             </section>
 
             {/* Career Stages - "Wherever you are in your career" */}
-            <section className="py-12 md:py-16 bg-muted/30">
+            <section className="py-16 md:py-20 bg-muted/30">
                 <div className="container-custom">
-                    <div className="text-center mb-8">
+                    <div className="text-center mb-12">
                         <ScrollAnimation animation="fade-up">
                             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-bold mb-3">
                                 Wherever You Are in Your <span className="text-gradient">Career</span>
@@ -342,64 +364,69 @@ const CareersPage = () => {
                         </ScrollAnimation>
                     </div>
 
-                    <div className="max-w-5xl mx-auto">
-                        <div className="grid md:grid-cols-5 gap-6">
-                            {/* Left Side - List */}
-                            <div className="md:col-span-2 space-y-2">
-                                {careerStages.map((stage) => (
-                                    <button
-                                        key={stage.id}
-                                        onClick={() => setSelectedCareerStage(stage)}
-                                        className={`w-full text-left p-3 rounded-xl transition-all duration-300 ${selectedCareerStage.id === stage.id
-                                            ? 'bg-primary text-primary-foreground shadow-lg'
-                                            : 'bg-background hover:bg-muted border border-border'
-                                            }`}
-                                    >
-                                        <div className="flex items-center gap-3">
-                                            <stage.icon className={`w-5 h-5 ${selectedCareerStage.id === stage.id ? 'text-primary-foreground' : 'text-primary'
-                                                }`} />
-                                            <span className="font-semibold">{stage.title}</span>
-                                        </div>
-                                    </button>
-                                ))}
-                            </div>
+                    <div className="max-w-6xl mx-auto">
+                        {/* Horizontal Tabs */}
+                        <div className="flex flex-wrap justify-center gap-4 mb-10">
+                            {careerStages.map((stage) => (
+                                <button
+                                    key={stage.id}
+                                    onClick={() => setSelectedCareerStage(stage)}
+                                    className={`flex items-center gap-2.5 px-7 py-3.5 rounded-full font-semibold text-sm transition-all duration-300 ${selectedCareerStage.id === stage.id
+                                        ? 'bg-primary text-primary-foreground shadow-lg scale-105'
+                                        : 'bg-background hover:bg-muted border border-border hover:border-primary'
+                                        }`}
+                                >
+                                    <stage.icon className={`w-5 h-5 ${selectedCareerStage.id === stage.id ? 'text-primary-foreground' : 'text-primary'
+                                        }`} />
+                                    <span className="hidden sm:inline">{stage.title}</span>
+                                </button>
+                            ))}
+                        </div>
 
-                            {/* Right Side - Image and Description */}
-                            <div className="md:col-span-3">
-                                <div className="card-elevated p-6 h-full">
-                                    {/* Image */}
-                                    <div className="w-full aspect-video rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-4">
-                                        <div className="text-center p-6">
+                        {/* Content Card */}
+                        <div className="card-elevated p-8">
+                            <div className="grid md:grid-cols-2 gap-8 items-center">
+                                {/* Left: Image */}
+                                <div className="order-2 md:order-1">
+                                    <div className="w-full aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+                                        <div className="text-center p-8">
                                             {(() => {
                                                 const Icon = selectedCareerStage.icon;
-                                                return <Icon className="w-16 h-16 text-primary mx-auto mb-3" />;
+                                                return <Icon className="w-24 h-24 text-primary mx-auto mb-4" />;
                                             })()}
-                                            <p className="text-muted-foreground text-sm">{selectedCareerStage.title} Illustration</p>
+                                            <p className="text-muted-foreground text-base font-medium">{selectedCareerStage.title}</p>
                                         </div>
                                     </div>
+                                </div>
 
-                                    {/* Description */}
-                                    <h3 className="font-heading text-xl font-bold mb-3">{selectedCareerStage.title}</h3>
-                                    <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                                {/* Right: Description */}
+                                <div className="order-1 md:order-2">
+                                    <h3 className="font-heading text-2xl md:text-3xl font-bold mb-4 text-gradient">
+                                        {selectedCareerStage.title}
+                                    </h3>
+                                    <p className="text-muted-foreground text-base leading-relaxed mb-6">
                                         {selectedCareerStage.description}
                                     </p>
 
                                     {/* Details */}
-                                    <div className="space-y-2">
+                                    <div className="space-y-3 mb-6">
                                         {selectedCareerStage.details.map((detail, index) => (
-                                            <div key={index} className="flex items-start gap-2">
-                                                <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2" />
-                                                <span className="text-sm text-muted-foreground">{detail}</span>
+                                            <div key={index} className="flex items-start gap-3">
+                                                <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                                    <div className="w-2 h-2 rounded-full bg-primary" />
+                                                </div>
+                                                <span className="text-base text-foreground/80">{detail}</span>
                                             </div>
                                         ))}
                                     </div>
 
-                                    <div className="mt-4">
-                                        <a href="#jobs" className="text-primary font-semibold flex items-center gap-2 hover:gap-3 transition-all">
-                                            View open positions
-                                            <ArrowRight className="w-5 h-5" />
-                                        </a>
-                                    </div>
+                                    <a
+                                        href="#jobs"
+                                        className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full text-sm font-semibold hover:bg-primary/90 transition-all duration-300 hover:gap-3 shadow-md hover:shadow-lg"
+                                    >
+                                        View open positions
+                                        <ArrowRight className="w-5 h-5" />
+                                    </a>
                                 </div>
                             </div>
                         </div>

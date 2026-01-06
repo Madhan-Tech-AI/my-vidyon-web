@@ -12,6 +12,12 @@ import Features from "./pages/Features";
 import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
 import Careers from "./pages/Careers";
+import JobSearch from "./pages/JobSearch";
+import SavedJobs from "./pages/SavedJobs";
+import AccessApplication from "./pages/AccessApplication";
+import WhoWeAre from "./pages/WhoWeAre";
+import LifeAtMyVidyon from "./pages/LifeAtMyVidyon";
+import HowWeHire from "./pages/HowWeHire";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -40,6 +46,12 @@ const AppRoutes = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/careers/job-search" element={<JobSearch />} />
+        <Route path="/careers/saved-jobs" element={<SavedJobs />} />
+        <Route path="/careers/access-application" element={<AccessApplication />} />
+        <Route path="/careers/who-we-are" element={<WhoWeAre />} />
+        <Route path="/careers/life-at-my-vidyon" element={<LifeAtMyVidyon />} />
+        <Route path="/careers/how-we-hire" element={<HowWeHire />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

@@ -122,6 +122,15 @@ export const Navbar = () => {
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
+              {/* Careers */}
+              <NavigationMenuItem>
+                <NavigationMenuLink className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50" asChild>
+                  <Link to="/careers">
+                    Careers
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+
               {/* Contact */}
               <NavigationMenuItem>
                 <NavigationMenuLink className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50" asChild>
@@ -173,6 +182,7 @@ export const Navbar = () => {
           </MobileDropdown>
 
           <Link to="/features" className="text-lg font-semibold py-2 border-b" onClick={() => setOpen(false)}>Features</Link>
+          <Link to="/careers" className="text-lg font-semibold py-2 border-b" onClick={() => setOpen(false)}>Careers</Link>
           <Link to="/contact" className="text-lg font-semibold py-2 border-b" onClick={() => setOpen(false)}>Contact</Link>
         </div>
       </MobileMenu>
