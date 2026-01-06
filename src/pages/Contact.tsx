@@ -147,7 +147,7 @@ const Contact = () => {
                           required
                           maxLength={100}
                           className="w-full px-4 py-2.5 rounded-xl border border-border bg-background focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors text-sm"
-                          placeholder="John Doe"
+                          placeholder="Enter your full name"
                         />
                       </div>
                       <div>
@@ -163,7 +163,7 @@ const Contact = () => {
                           required
                           maxLength={255}
                           className="w-full px-4 py-2.5 rounded-xl border border-border bg-background focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors text-sm"
-                          placeholder="john@school.edu"
+                          placeholder="Enter your email address"
                         />
                       </div>
                     </div>
@@ -181,7 +181,7 @@ const Contact = () => {
                           onChange={handleChange}
                           maxLength={20}
                           className="w-full px-4 py-2.5 rounded-xl border border-border bg-background focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors text-sm"
-                          placeholder="+1 (234) 567-890"
+                          placeholder="Enter your mobile number"
                         />
                       </div>
                       <div>
@@ -196,7 +196,7 @@ const Contact = () => {
                           onChange={handleChange}
                           maxLength={200}
                           className="w-full px-4 py-2.5 rounded-xl border border-border bg-background focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors text-sm"
-                          placeholder="ABC Public School"
+                          placeholder="Enter your institution name"
                         />
                       </div>
                     </div>

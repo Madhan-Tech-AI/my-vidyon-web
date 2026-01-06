@@ -51,7 +51,7 @@ const AccessApplicationPage = () => {
                                 You haven't submitted any applications. Start your journey by browsing our open positions.
                             </p>
                             <a
-                                href="/job-search"
+                                href="/careers/job-search"
                                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full font-semibold hover:bg-primary/90 transition-all"
                             >
                                 Browse Jobs

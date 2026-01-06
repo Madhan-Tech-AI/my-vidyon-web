@@ -189,7 +189,7 @@ const WhoWeArePage = () => {
                                 Join a team that's passionate about making a difference in education
                             </p>
                             <a
-                                href="/careers"
+                                href="/careers/job-search"
                                 className="inline-flex items-center gap-2 px-8 py-4 text-white rounded-full font-semibold transition-all shadow-lg hover:gap-3"
                                 style={{ backgroundColor: '#DD0303' }}
                                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#BE0202'}

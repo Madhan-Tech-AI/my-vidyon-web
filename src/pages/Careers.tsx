@@ -245,13 +245,13 @@ const CareersPage = () => {
                         </ScrollAnimation>
 
                         <ScrollAnimation animation="fade-up" delay={200}>
-                            <a
-                                href="#jobs"
+                            <Link
+                                to="/careers/job-search"
                                 className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold hover:bg-primary/90 transition-all duration-300 hover:gap-3"
                             >
                                 Search open roles
                                 <ArrowRight className="w-5 h-5" />
-                            </a>
+                            </Link>
                         </ScrollAnimation>
                     </div>
                 </div>
@@ -291,10 +291,10 @@ const CareersPage = () => {
                                     <p className="text-muted-foreground leading-relaxed mb-4">
                                         {careerAreas[currentCareerArea].description}
                                     </p>
-                                    <a href="#jobs" className="text-primary font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+                                    <Link to="/careers/job-search" className="text-primary font-semibold flex items-center gap-2 hover:gap-3 transition-all">
                                         Explore opportunities
                                         <ArrowRight className="w-5 h-5" />
-                                    </a>
+                                    </Link>
                                 </div>
 
                                 {/* Right Side - Image */}
@@ -409,13 +409,13 @@ const CareersPage = () => {
                                         ))}
                                     </div>
 
-                                    <a
-                                        href="#jobs"
+                                    <Link
+                                        to="/careers/job-search"
                                         className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full text-sm font-semibold hover:bg-primary/90 transition-all duration-300 hover:gap-3 shadow-md hover:shadow-lg"
                                     >
                                         View open positions
                                         <ArrowRight className="w-5 h-5" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -436,7 +436,7 @@ const CareersPage = () => {
                                 <p className="text-muted-foreground mb-6 leading-relaxed">
                                     Explore open roles that match your interests and skills.
                                 </p>
-                                <Link to="/contact" className="btn-cta inline-flex items-center gap-2 mx-auto">
+                                <Link to="/careers/job-search" className="btn-cta inline-flex items-center gap-2 mx-auto">
                                     Search Jobs
                                     <ArrowRight className="w-4 h-4" />
                                 </Link>

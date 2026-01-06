@@ -75,7 +75,7 @@ const LifeAtMyVidyonPage = () => {
                             <ScrollAnimation animation="fade-up" delay={300}>
                                 <div className="flex flex-wrap gap-3">
                                     <a
-                                        href="/careers"
+                                        href="/careers/job-search"
                                         className="px-6 py-3 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-xl text-sm"
                                         style={{ backgroundColor: '#DD0303' }}
                                         onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#BE0202'}
@@ -208,7 +208,7 @@ const LifeAtMyVidyonPage = () => {
                                 Explore our open positions and become part of a team that's transforming education through technology
                             </p>
                             <a
-                                href="/careers"
+                                href="/careers/job-search"
                                 className="inline-flex items-center gap-2 px-8 py-4 text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-xl"
                                 style={{ backgroundColor: '#DD0303' }}
                                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#BE0202'}

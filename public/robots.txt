@@ -1,3 +1,16 @@
+# robots.txt for My Vidyon
+# https://my-vidyon-web.vercel.app/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://my-vidyon-web.vercel.app/sitemap.xml
+
+# Crawl-delay (optional)
+Crawl-delay: 1
+
+# Allow all major search engines
 User-agent: Googlebot
 Allow: /
 
@@ -10,5 +23,11 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
 Allow: /
