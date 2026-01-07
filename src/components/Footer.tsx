@@ -28,10 +28,10 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61585755381684", label: "Facebook" },
+  { icon: Twitter, href: "https://x.com/MyVidyon", label: "Twitter" },
   { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Instagram, href: "#", label: "Instagram" },
+  { icon: Instagram, href: "https://www.instagram.com/myvidyon/", label: "Instagram" },
 ];
 
 export const Footer = () => {
@@ -53,18 +53,18 @@ export const Footer = () => {
             </p>
             <div className="space-y-3">
               <a
-                href="mailto:contact@myvidyon.com"
+                href="mailto:myvidyon@gmail.com"
                 className="flex items-center gap-3 text-background/70 hover:text-primary transition-colors"
               >
                 <Mail className="w-5 h-5" />
-                <span>contact@myvidyon.com</span>
+                <span>myvidyon@gmail.com</span>
               </a>
               <a
                 href="tel:+1234567890"
                 className="flex items-center gap-3 text-background/70 hover:text-primary transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                <span>+1 (234) 567-890</span>
+                <span>+91 9043988697</span>
               </a>
               <div className="flex items-start gap-3 text-background/70">
                 <MapPin className="w-5 h-5 mt-0.5" />

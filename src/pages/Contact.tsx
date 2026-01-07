@@ -19,14 +19,14 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email Us",
-    value: "contact@myvidyon.com",
-    link: "mailto:contact@myvidyon.com",
+    value: "myvidyon@gmail.com",
+    link: "mailto:myvidyon@gmail.com",
   },
   {
     icon: Phone,
     title: "Call Us",
-    value: "+1 (234) 567-890",
-    link: "tel:+1234567890",
+    value: "+91 9043988697",
+    link: "tel:+919043988697",
   },
   {
     icon: MapPin,
