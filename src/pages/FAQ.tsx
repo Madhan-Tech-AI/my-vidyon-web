@@ -75,9 +75,15 @@ const faqs = [
     },
 ];
 
+import SEO from "@/components/SEO";
+
 const FAQ = () => {
     return (
         <main className="min-h-screen">
+            <SEO
+                title="Frequently Asked Questions"
+                description="Find answers to common questions about My Vidyon ERP, implementation, pricing, and support. We are transparent about our services."
+            />
             <Navbar />
 
             {/* Hero */}

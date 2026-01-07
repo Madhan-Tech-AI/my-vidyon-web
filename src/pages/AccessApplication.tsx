@@ -3,9 +3,15 @@ import Footer from "@/components/Footer";
 import ScrollAnimation from "@/components/ScrollAnimation";
 import { FileText, CheckCircle, Clock, AlertCircle, ArrowLeft } from "lucide-react";
 
-const AccessApplicationPage = () => {
+import SEO from "@/components/SEO";
+
+const AccessApplication = () => {
     return (
-        <div className="min-h-screen bg-background">
+        <main className="min-h-screen bg-background">
+            <SEO
+                title="Access Application - Candidate Portal"
+                description="Login to access your job applications and complete your candidate profile."
+            />
             <Navbar />
 
             {/* Hero Section */}
@@ -62,8 +68,8 @@ const AccessApplicationPage = () => {
             </section>
 
             <Footer />
-        </div>
+        </main>
     );
 };
 
-export default AccessApplicationPage;
+export default AccessApplication;

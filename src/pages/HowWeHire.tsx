@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollAnimation from "@/components/ScrollAnimation";
+import SEO from "@/components/SEO";
 import { FileText, Users, MessageCircle, CheckCircle, ArrowRight } from "lucide-react";
 
 const HowWeHirePage = () => {
@@ -38,7 +39,11 @@ const HowWeHirePage = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-background">
+        <main className="min-h-screen bg-background">
+            <SEO
+                title="How We Hire - Recruitment Process"
+                description="Understand our hiring process. From application to offer, we ensure a transparent and fair experience for all candidates."
+            />
             <Navbar />
 
             {/* Hero Section */}
@@ -103,7 +108,7 @@ const HowWeHirePage = () => {
             </section>
 
             <Footer />
-        </div>
+        </main>
     );
 };
 

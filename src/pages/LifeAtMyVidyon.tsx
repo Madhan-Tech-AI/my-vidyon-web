@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollAnimation from "@/components/ScrollAnimation";
+import SEO from "@/components/SEO";
 import { Coffee, Smile, Zap, Calendar, Gift, Users, Heart, Lightbulb, Trophy, TrendingUp, ArrowLeft } from "lucide-react";
 
 const LifeAtMyVidyonPage = () => {
@@ -28,7 +29,11 @@ const LifeAtMyVidyonPage = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-background">
+        <main className="min-h-screen bg-background">
+            <SEO
+                title="Life at My Vidyon - Employee Stories"
+                description="What is it like to work at My Vidyon? Read stories from our team members and see our vibrant office culture."
+            />
             <Navbar />
 
             {/* Hero Section - Redesigned */}
@@ -222,7 +227,7 @@ const LifeAtMyVidyonPage = () => {
             </section>
 
             <Footer />
-        </div>
+        </main>
     );
 };
 

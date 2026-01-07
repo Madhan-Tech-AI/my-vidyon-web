@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollAnimation from "@/components/ScrollAnimation";
 import CTASection from "@/components/CTASection";
+import SEO from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
@@ -92,6 +93,10 @@ const ERPSolutions = () => {
 
   return (
     <main className="min-h-screen">
+      <SEO
+        title="ERP Solutions - 12 Integrated Modules"
+        description="Explore our comprehensive school ERP modules: Admission, Fees, Transport, Academics, Communication, and more. A complete system for modern schools."
+      />
       <Navbar />
 
       {/* Hero */}

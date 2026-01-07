@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollAnimation from "@/components/ScrollAnimation";
+import SEO from "@/components/SEO";
 import {
   Mail,
   Phone,
@@ -108,6 +109,10 @@ const Contact = () => {
 
   return (
     <main className="min-h-screen">
+      <SEO
+        title="Contact Us - Get in Touch"
+        description="Ready to transform your institution? Contact My Vidyon for a personalized demo or support. We are here to help you find the perfect solution."
+      />
       <Navbar />
 
       {/* Hero */}

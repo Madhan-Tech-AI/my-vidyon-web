@@ -31,6 +31,7 @@ import {
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ScrollAnimation from "@/components/ScrollAnimation";
+import SEO from "@/components/SEO";
 import { useState } from "react";
 
 const careerAreas = [
@@ -153,6 +154,10 @@ const CareersPage = () => {
 
     return (
         <div className="min-h-screen bg-background">
+            <SEO
+                title="Careers - Join Our Team"
+                description="Join My Vidyon and help shape the future of education technology. Explore job openings, our culture, and benefits."
+            />
             {/* Main Navigation Bar - Same as main site */}
             <Navbar />
 

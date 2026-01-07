@@ -38,9 +38,15 @@ const milestones = [
   { year: "2024", title: "AI Integration", description: "Introduced AI-powered analytics and facial recognition features." },
 ];
 
+import SEO from "@/components/SEO";
+
 const About = () => {
   return (
     <main className="min-h-screen">
+      <SEO
+        title="About Us - Transforming Education Technology"
+        description="Learn about My Vidyon's mission to help schools run smarter. We provide simple, secure ERP solutions that reduce admin workload and empower educators."
+      />
       <Navbar />
 
 

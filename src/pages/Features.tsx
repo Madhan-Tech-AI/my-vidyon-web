@@ -103,9 +103,15 @@ const comparisonPoints = [
   { feature: "No Setup Fee", us: true, others: false },
 ];
 
+import SEO from "@/components/SEO";
+
 const Features = () => {
   return (
     <main className="min-h-screen">
+      <SEO
+        title="Key Features - Intelligent School Management"
+        description="Discover the powerful features of My Vidyon: Real-time analytics, mobile apps, secure cloud storage, and seamless communication tools."
+      />
       <Navbar />
 
       {/* Hero */}

@@ -2,10 +2,15 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollAnimation from "@/components/ScrollAnimation";
 import { Search, MapPin, Briefcase, Clock, ArrowLeft } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const JobSearchPage = () => {
     return (
         <div className="min-h-screen bg-background">
+            <SEO
+                title="Search Jobs - Career Opportunities"
+                description="Browse current openings at My Vidyon. Find roles in Engineering, Product, Sales, and Customer Success."
+            />
             <Navbar />
 
             {/* Hero Section */}

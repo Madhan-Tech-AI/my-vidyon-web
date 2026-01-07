@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollAnimation from "@/components/ScrollAnimation";
+import SEO from "@/components/SEO";
 import { Users, Award, Globe, Heart, Building2, Sparkles, Target, TrendingUp, ArrowRight, ArrowLeft } from "lucide-react";
 
 const WhoWeArePage = () => {
@@ -36,7 +37,11 @@ const WhoWeArePage = () => {
 
 
     return (
-        <div className="min-h-screen bg-background">
+        <main className="min-h-screen bg-background">
+            <SEO
+                title="Who We Are - Our Culture & Values"
+                description="Discover the people and values behind My Vidyon. We are a diverse team passionate about education and technology."
+            />
             <Navbar />
 
             {/* Hero Section - Bold Statement */}
@@ -203,7 +208,7 @@ const WhoWeArePage = () => {
             </section>
 
             <Footer />
-        </div>
+        </main>
     );
 };
 

@@ -3,9 +3,15 @@ import Footer from "@/components/Footer";
 import ScrollAnimation from "@/components/ScrollAnimation";
 import { Bookmark, Trash2, MapPin, Briefcase, Clock, ArrowLeft } from "lucide-react";
 
-const SavedJobsPage = () => {
+import SEO from "@/components/SEO";
+
+const SavedJobs = () => {
     return (
-        <div className="min-h-screen bg-background">
+        <main className="min-h-screen bg-background">
+            <SEO
+                title="Saved Jobs - Your Applications"
+                description="View your saved job opportunities and track your application status at My Vidyon."
+            />
             <Navbar />
 
             {/* Hero Section */}
@@ -62,8 +68,8 @@ const SavedJobsPage = () => {
             </section>
 
             <Footer />
-        </div>
+        </main>
     );
 };
 
-export default SavedJobsPage;
+export default SavedJobs;

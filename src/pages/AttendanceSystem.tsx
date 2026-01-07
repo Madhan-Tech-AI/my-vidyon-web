@@ -74,9 +74,15 @@ const howItWorks = [
 
 
 
+import SEO from "@/components/SEO";
+
 const AttendanceSystem = () => {
   return (
     <main className="min-h-screen">
+      <SEO
+        title="AI Attendance System - Facial Recognition"
+        description="Automate diverse attendance tracking with our AI-powered facial recognition system. Secure, fast, and accurate attendance for students and staff."
+      />
       <Navbar />
 
       {/* Hero */}
