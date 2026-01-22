@@ -4,5 +4,35 @@
             "source": "/(.*)",
             "destination": "/index.html"
         }
+    ],
+    "routes": [
+        {
+            "src": "/careers/job-search",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/careers/saved-jobs",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/careers/access-application",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/careers/who-we-are",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/careers/life-at-my-vidyon",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/careers/how-we-hire",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
+        }
     ]
 }
